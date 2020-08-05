@@ -14,7 +14,8 @@ Introduction and motivation:
 
 Research Methodology:
 
-![](images/filename%20dann.png)
+![dann](https://user-images.githubusercontent.com/45094620/89397708-a039e080-d729-11ea-93c2-98c7cb6ae349.png)
+
 
 This paper makes the following contributions:
 Tool for extracting AI model-specific metadata from software Repositories with currently five extraction modules (Section 2).

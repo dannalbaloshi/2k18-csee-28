@@ -3,6 +3,7 @@
 
 Title:
      "AIMMX: Artificial Intelligence Model Metadata Extractor"
+
 Author:
 Jason Tsay, IBM Research, Yorktown Heights, New York, USA
 Alan Braz IBM research, Sao Paulo, Brazil
@@ -10,6 +11,7 @@ Martin Hirzel, Avraham Shinnar, Todd Mummert, IBM Research, Yorktown Heights, Ne
 
 Conference Name:
          2020 International Conference on Engineering
+
 Introduction and motivation:
                      Despite all the inclusion that the machine learning model and AI (AI) restores applications, AI development is currently a poorly planned process. Software Engineering and AI Development share multiple languages ​​and equal tools, but AI development as an engineering practice remains in the early stages. Mining. The maintenance of software AI models enables an understanding of the current AI Development Situation. However, most of the relevant metadata around the models are not easily accessible directly from the repositories And require a reduction or domain information. This paper has a library called AIMMX that allows AI Model Metadata Extraction to be simplified from the software. The integration of adequate Hardware resources, the delivery of large amounts of information, and innovations in AI (AI) models has resulted in a resurgence in AI research and performance. In this paper, we describe the AI ​​model as all the software and artificial data needed to define a given Task model, to train mathematical tools, and / or to add a weighted model to predict service time or application. Our model definitions include traditional machine learning (ML) and in-depth learning models. AI as an engineering practice is still in its early stages with the usual unpleasant and lovable effects (Both in terms of your time and quality) that are often difficult to produce. How much AI proximity and Algorithms approach and the current increase in AI framework output The result of the type of AI model releases and presentations. Sheer variability and a lack of standard positioning lead to models that are difficult to work with and negotiate to some degree.
 

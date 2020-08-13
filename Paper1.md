@@ -38,11 +38,17 @@ Automated Domain Inference
 Evaluation and Preliminary  Analysis:
 
 Evaluation Dataset
+
 Model Name Extraction
+
 Reference Extraction
+
 Dataset Extraction 
+
 Frame Extraction 
+
 Automated Domain Inference
+
 System Evaluation
 
 

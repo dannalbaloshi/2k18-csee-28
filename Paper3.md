@@ -1,71 +1,74 @@
 # 2k18-csee-28 Danish Jalbani
 
-Title:
-           "Transferring information to Modern Code Update"
+Title: 
+           “Knowledge Transfer in Modern Code Review”
 
 Author:
-             Maria Caulo1, Bin Lin2, Gabriel Bavota2, Giuseppe Scanniello1, Michele Lanza2
+Maria Caulo1, Bin Lin2, Gabriele Bavota2, Giuseppe Scanniello1, Michele Lanza2
 
-Conference Name:
-               International Conference on Cognitive Strategy (ICPC) in 2020
 
-Introduction and Inspiration:
-Information transfer is one of the main objectives of the latest code review, as shown by several studies that evaluated and interviewed developers. While data transfer may also be the obvious expectation of a code review process, there are no analytical studies that use tagged data from software to test the performance of code reviews for training “developers” and to improve their overtime skills. We present a mineral-based study investigating how the code review process is helping and developers have strengthened their offerings to open source projects over time. At the time of this paper, we were introducing Topics - a tool for identifying ways to change common patterns associated with system data. Used as an IntelliJ IDEA support plugin
-Java programming language and Git VCS. These limitations come from the Refactoring Miner tool we use to obtain effective refinement. If there are similar tools for other languages ​​or VC, the plugin can be easily expanded to support other IDEs built into the IntelliJ Platform.
+Conference Name: 
+          International Conference on Program Comprehension (ICPC) 2020
 
-STUDY ARTICLE:
+Introduction and Motivation:
+Knowledge transfer is one of the main goals of modern code review, as shown by several studies that surveyed and interviewed developers. While knowledge transfer is a clear expectation of the code review process, there are no analytical studies using data mined from software repositories to assess the effectiveness of code review in “training” developers and improve their skills overtime. We present a mining-based study investigating how and whether the code review process helps developers to improve their contributions to open source projects over time. In this paper, we present Topias — a tool for the visualization of methods change frequency consistent with the version system data. It had been implemented as a plugin for IntelliJ IDEA supporting
+Java programing language and Git VCS. These limitations come from the Refactoring Miner tool that we use to detect applied refactorings. If there have been similar tools for other languages or VC, the plugin could easily be extended to support other IDEs built on IntelliJ Platform.
+
+STUDY DESIGN:
   Hypothesis
-          Software development can be an informative activity. Evaluation studies have provided evidence that code reviews play a very important role in transmitting information between developers. However, there is not much evidence to support the claim. During this study, we mined our software to test the information in bulk
-Express appreciation for what happens in the code review.
+          Software development may be a knowledge-intensive activity. Qualitative research provided evidence that code review plays a pivotal role in knowledge transfer among developers. However, no quantitative evidence exists in support of this claim. During this study, we mine software repositories to quantitatively assess the knowledge
+Transfer happening because of code review.
 
-Subject Content:
-The study context contains 728 developers, 4 981 software repositories. They contributed to it, and 77,456 closed PRs.
-Developer options:
-   To conduct our study, we collected information about GitHub users. Who created his account in 2015? This is designed to collect a minimum of 4 years of donor history for each developer.
-As data collected in September 2019, we will be looking at inyaka4 year contributions even for users who created their GitHub account in December 2015. A four-year window is enough to view PRs submitted by developers and, as a result, update information submissions over time.
-Drag application collection and filter:
-We have collected all "closed" PR submitted by 818 topic developers from the day they joined GitHub up to September 2019, as soon as we collected data. This resulted in a total of 75,456 PRs receiving 9,845 vacancies. for each PR, we collect
-The following details:
-(1) Creation date: PR installation date.
-(2) Approval: whether closed PR is accepted.
-(3) Closing date: the date PR closed.
-(4) ASCII document commentary: comments left by reviewers clearly linked to portions of the code submitted for review. Comments left by a PR author are not included.
-(5) General comment: all comments left in the PR discussion by all developers next to the PR author, except the ASCII document documents. These comments are usually invited to clarify or clarify why PR should be accepted / rejected.
-Source code comments, instead, report explicit material from the PR author to validate the imported code. We separate the ASCII document commentary and therefore the general ideas, because there may be different levels of technical detail in these two categories.
-(6) Author: PR author.
-(7) Providers: all developers participating in Discussion and PR hosting.
-Steps:
-To substantiate our point of view, we use proxies to measure the transmission of information by developers through their revised PRs and to evaluate the quality of developer contributions over time.
-Methods of information. We use the amount of revised PRs developer provided (written) within the past (i.e., prior to this PR) as a liability for the amount of information transferred to it as a result of the code review process. That is, we think that the PRs are closed and the most revised engineers have, the more information the developer has gained. In our study, we found that peer-reviewed PRs were the ones that received at least 1 comment by non-bot users. The reason for this choice is that if no comments are given to other developers, we assume that PR was not limited to a proper review process and, therefore, is not happy with our intentions, because no transfer information is possible when PR.
+Study Context:
+The study context consists of 728 developers, 4,981 software repositories. They contributed to, and 77,456 closed PRs.
+
+Developer’s selection:
+   To run our study, we collected information about GitHub users. Who created their account in 2015? This was done to collect at least four years of contribution history for each developer.
+Since data was collected in September 2019, we can observe ∼4 years of contributions even for users who created their GitHub account in December 2015. A four-year time window is long enough to observe enough PRs submitted by developers and, consequently, to study the knowledge transfer over time.
+Pull requests collection and filtering:
+We collected all the “closed” PRs submitted by the 818 subject developers from the day they joined GitHub until the end of September 2019, when we Collected the data. This led to a total of 77,456 PRs spanning 9,845 repositories. For each PR, we collected the
+Following information:
+(1) Creation date: the date during which the PR was submitted.
+(2) Acceptance: whether the closed PR was accepted.
+(3) Closing date: the date during which the PR was closed.
+(4) ASCII text file comments: the comments left by the reviewers that are explicitly linked to parts of the code submitted for review. Comments left by the PR author are excluded.
+(5) General comments: all the comments left within the PR discussion by all the developers aside from the PR author, excluding source code comments. These comments are generally wont to invite clarifications or to elucidate why a PR should be accepted/rejected.
+Source code comments, instead, reports explicit action items for the PR author to enhance the submitted code. We separate the source code comments and therefore the general comments, as there might be different levels of technical details in these two categories.
+(6) Author: the author of the PR.
+(7) Contributors: all the developers who are involved within the Discussion and handling of the PR.
+
+Measures:
+To verify our hypothesis, we use proxies to measure the knowledge transfer experienced by developers through their past reviewed PRs and to assess the quality of developers’ contribution over time. 
+Knowledge measures. We use the number of reviewed PRs developer contributed (authored) in the past (i.e., before the current PR) as a proxy of the amount of knowledge transferred to her thanks to the code review process. That is, we assume that the more closed and peer-reviewed PRs a developer has, the more knowledge the developer gained. In our study, we consider that peer-reviewed PRs are those which received at least one comment by non-bot users. The rationale behind this choice is that if no comments are given by other developers, we assume that the PR was not subject of a formal review process and, thus, it is not interesting for our goals, since no transfer knowledge can happen in that PR.
 
 
-Data analysis:
-         Quality delivery methods. We think that through the transfer of information one of the benefits for developers is the improvement of the quality of their offerings (e.g., PR) over time. While there are a few metrics available to move a certain code to certain limits
-Block their programs according to our study content: 1) the software involved is often written in several programming languages, making it difficult to bend global CK network tracks, including not all input languages ​​focused on something. 2) Metrics like bug count believe that an idea is often identified as a result of the constant use of problem tracking systems, which is not the case. Recent comments received. number of general comments received
-From all the developers except the PR author. We are waiting
-That is with the increase in revised PRs (e.g., for more information
-Forwarded developer (won), a few conversations are about to take place
-Created by PR, which leads to a reduction in standard comments.
-Received source code comments. the number of ASCII document comments received from all developers except the PR author. Similarly to the general comments received, we can expect that the views of the ASCII documents received will diminish over time as well. Acceptance value. the speed of acceptance of past PRs. We expect that the share of accepted PRs over time will increase. PR hour adopted. Time (expressed in minutes) between creation and thus closure of accepted PRs. We expect that the time required to easily adopt PRs will decrease over time. ASCII document comment concept. The emotional unity of all ASCII documentary ideas within PRs. We expect that with the increase in the quality of donations receive acceptance within the code review. Therefore, the feelings of the developer embedded within the comments should get better over time. The feeling of common comment. The emotional unity of all the common comments within PRs. Similarly in the comments of the ASCII document, we expect that general comments will also be optimistic over time. Conceptual analysis To calculate the sound unity of comments within PRs, we have adopted SentiStrength-SE.
+Data Analysis:
+         Contribution quality measures. We assume that with the knowledge transfer one of the major benefits developers receive is the improvement of the quality of their contributions (i.e., PRs) over time. While there are a few existing metrics to evaluate code quality some limitations
+Hinder their applications in our study context: 1) the software repositories involved can be written in different programming languages, making it impossible to set universal thresholds for CK metrics, let alone not all programming languages are object-oriented. 2) Metrics like bug count rely on the assumption that bugs can be identified thanks to the consistent usage of issue tracking systems, which is not always the case. General comments received. The number of general comments received
+From all the developers other than the PR author. We expect
+That with the increase of past reviewed PRs (i.e., with more knowledge
+Transfer the developer benefited of), fewer discussions will be
+Triggered by the PR, leading to a reduction of general comments.
+Source code comments received. The number of source code comments received from all the developers other than the PR author. Similarly to general comments received, we would expect that the source code comments received will decrease over time as well. Acceptance Rate. The rate of the past PRs acceptance. We expect that the percentage of accepted PRs over time will increase. Accepted PR closing time. The time (expressed in minutes) between the creation and the closing of the accepted PRs. We expect that the time needed to accept PRs will decrease over time. Sentiment of source code comments. The sentiment polarity of all source code comments in the PRs. We expect that with the increase of contribution quality more appreciation will be received in the code review. Thus, the sentiment of the developer embedded in the comments should be increasingly positive over time. Sentiment of general comments. The sentiment polarity of all the general comments in the PRs. Similarly to source code comments, we expect general comments will also be more positive over time. Sentiment analysis. To calculate the sentiment polarity of the comments in the PRs, we adopted SentiStrength-SE.
 
-Data analysis:
-               Our hypothesis suggests that developers, who have benefited from the transfer of high-quality information due to previous revised PRs who have moved, also contribute higher-quality PR to the project. We confirm this hypothesis because of the previously released data. Each peer-reviewed PRi submitted by any of the other advanced developers represents a line in our database, reporting (i) information transfer methods, i.e. the number of previous revised PRs made by the engineer before PRi and as our control variants
-With most of the work he did internally in the past.
+Data Analysis:
+               Our hypothesis suggests that developers, who benefited of higher knowledge transfer thanks to the past reviewed PRs they submitted, are also the ones contributing higher quality PRs in the project. We verify this hypothesis thanks to the data previously extracted. Each peer-reviewed PRi submitted by any of the studied developers represents a row in our dataset, reporting (i) the knowledge transfer measures, meaning the number of past reviewed PRs performed by the developer before PRi as well as our control variable, represented
+By the number of commits she performed in the past.
 
 RESULTS:
-The box structures in Figures 1, 2, 3, and 4 show the tendency for reliable variables (i.e., donation quality methods), in both crosses ((left) and single project conditions, (right) in relation to different independent variables (i.e., information methods) However, the best neighbor of each figure reports the results obtained when dividing developers into "information groups" based on the revised PRs they sent while the lower part shows the same results when team engineers support the amount of previous work they did.
-Value for PRs:
-By looking at the robots reported in Fig. 1 (a) and (b), we will consider the similarity of the Approval Percentage (indicated by percentage) of PRs when previous PRs reviewed PRs submitted by the developer for his information. That is, the minimum viewing of Fig. 1 (upper part), we did not see any effect on the transfer of information on future PRs opportunities to be accepted.
-Accepted Closing Time:
-As for the accepted PR hour, the best neighbor of Fig. 2 moreover he is flat, in both cross- and single-project scenes. These findings are supported by the results of statistical analysis, reported size sizes that are not desirable for all comparisons made.
-Comments Posted on PRs:
-We discuss together our findings both the majority of common comments (Figure 3) and comments of the ASCII document (Figure 4) submitted within the PRs submitted by various groups of developers. We started specifically
-The first is a neighbor of both figures (e.g., results related to PRs recently reviewed).
-To answer our research question:
-Our study has led to what we will describe as a negative outcome. in other analysis-dependent variables we did not find any significant effect on the transmission of information within the code review process.
-Level of contributions submitted by developers to open source projects. in particular, in terms of the acceptance of PRs, we did not see any positive impact within the context of the project project when we used previous PRs as a proxy to transfer information. Instead, the increase in experience over time may be more important in the event of the level of acceptance of PRs, as evidenced by the results obtained when using previous practice as an independent variant.
+The box plots in Figures 1, 2, 3, and 4 show the trends of the dependent variables (i.e., the contribution quality measures), for both the cross- (left) and single- (right) project scenarios, with respect to the two independent variables (i.e., the knowledge measures).In particular, the top part of each figure reports the results obtained when splitting developers into “knowledge groups “based on the past reviewed PRs they submitted, while the bottom part shows the same results when grouping developers based on the number of past commits they performed. The red dot represents the mean value in each box plot.
+PRs Acceptance Rate:
+By looking at the boxplots reported in Fig. 1 (a) and (b), we can observe an almost flat trend of the Acceptance Rate (expressed in percentage) of PRs when the past reviewed PRs submitted by developer serve as a proxy for her knowledge. That is, at least by looking at Fig. 1 (top part), we did not observe any effect of the knowledge transfer on the likelihood of future PRs to be accepted.
+Accepted PRs Closing Time:
+As for the accepted PR closing time, the top part of Fig. 2 is also quite flat, for both cross- and single-project scenarios. This finding is also supported by the results of the statistical analysis, reporting negligible effect sizes for all performed comparisons.
+Comments Posted in PRs:
+We discuss together our findings for both the number of general comments (Fig. 3) and source code comments (Fig. 4) posted in the PRs submitted by different groups of developers. We first focus on
+The top part of both figures (i.e., results related to the past reviewed PRs).
+Answering our Research Question:
+Our study led to what we can define a negative result. For most of the analyzed dependent variables we did not find any strong impact of the knowledge transfer in the code review process on
+The quality of the contributions submitted by developers in open source projects. In particular, for the PRs acceptance rate, we did not observe any positive effect in the cross-project scenario when using past PRs as a proxy for knowledge transfer. Instead, an increase of experience over time might be more important for the improvement of the PRs acceptance rate, as demonstrated by the results achieved when using past commits as independent variable.
 
 CONCLUSIONS
-           We presented a quantitative study to research knowledge transferrin code review. Our results were mostly negative: we weren't able to capture the positive role played by code review in knowledge
-Transfer among developers, as was previously suggested within the literature [2].This came to us as a surprise, as we were confident those a minimum of serious traces of the knowledge transfer, because despite not supporting the findings of Bachelor and Bird [2] given our results, we actually are convinced that their claims are correct. This raises sort of questions that we've addressed impart throughout the latter a neighborhood of the paper, where we conjecture possible fallacies in our experiment design and notable threats to
-Validity that are difficult to completely address, especially those regarding the measures we used to quantify the impact of knowledge transfer. 
+           We presented a quantitative study to investigate knowledge transferrin code review. Our results were mostly negative: we were not able to capture the positive role played by code review in knowledge
+Transfer among developers, as was previously suggested in the literature [2].This came to us as a surprise, as we were confident those at least significant traces of the knowledge transfer, because despite not supporting the findings of Bachelor and Bird [2] given our results, we actually are convinced that their claims are correct. This raises a number of questions that we have addressed impart throughout the latter part of the paper, where we conjecture possible fallacies in our experiment design and notable threats to
+Validity that are difficult to fully address, especially those regarding the measures we used to quantify the impact of knowledge transfer. A

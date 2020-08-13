@@ -1,41 +1,13 @@
 # 2k18-csee-28 Danish Jalbani
 
-Title: 
-           “Knowledge Transfer in Modern Code Review”
+Introduction and Motivation: 
+Knowledge transfer is the main goal in modern code review, as each study survey and interview respondents have shown. Although there is a clear expectation about the Knowledge Transfer code review approach, there are no analytical studies using data dug from software repositories to assess the effectiveness of code review among "trained" developers and improve their skills. We present a mining-based study that explores how and where a code review approach helps developers improve their contribution to open source projects over time. In this paper, we will demonstrate Topias - a tool for visualizing changes in methods related to variant system data. It is implemented as a plugin for Git VCS which supports Java programming language and Intelligent IDEA. These limitations come from the refactoring minor tool we use to detect applied reflection. If you have other languages ​​or tools similar to VC, you can easily extend the plugin to support other IDEs built into the Intelligence platform.
 
-Author:
-Maria Caulo1, Bin Lin2, Gabriele Bavota2, Giuseppe Scanniello1, Michele Lanza2
+Study Design: Hypothesis software development is a knowledge-intensive activity. Qualitative research has provided evidence that code review plays an important role in the transfer of knowledge between developers. However, there is no quantitative evidence to support this claim. During this study, we will quantitatively assess the transfer of knowledge due to code review to the software repository.
 
+Study Context: The study context consisted of 728 developers and 4,981 software repositories. He cooperated and 77,456 rejected PR.
 
-Conference Name: 
-          International Conference on Program Comprehension (ICPC) 2020
-
-Introduction and Motivation:
-Knowledge transfer is one of the main goals of modern code review, as shown by several studies that surveyed and interviewed developers. While knowledge transfer is a clear expectation of the code review process, there are no analytical studies using data mined from software repositories to assess the effectiveness of code review in “training” developers and improve their skills overtime. We present a mining-based study investigating how and whether the code review process helps developers to improve their contributions to open source projects over time. In this paper, we present Topias — a tool for the visualization of methods change frequency consistent with the version system data. It had been implemented as a plugin for IntelliJ IDEA supporting
-Java programing language and Git VCS. These limitations come from the Refactoring Miner tool that we use to detect applied refactorings. If there have been similar tools for other languages or VC, the plugin could easily be extended to support other IDEs built on IntelliJ Platform.
-
-STUDY DESIGN:
-  Hypothesis
-          Software development may be a knowledge-intensive activity. Qualitative research provided evidence that code review plays a pivotal role in knowledge transfer among developers. However, no quantitative evidence exists in support of this claim. During this study, we mine software repositories to quantitatively assess the knowledge
-Transfer happening because of code review.
-
-Study Context:
-The study context consists of 728 developers, 4,981 software repositories. They contributed to, and 77,456 closed PRs.
-
-Developer’s selection:
-   To run our study, we collected information about GitHub users. Who created their account in 2015? This was done to collect at least four years of contribution history for each developer.
-Since data was collected in September 2019, we can observe ∼4 years of contributions even for users who created their GitHub account in December 2015. A four-year time window is long enough to observe enough PRs submitted by developers and, consequently, to study the knowledge transfer over time.
-Pull requests collection and filtering:
-We collected all the “closed” PRs submitted by the 818 subject developers from the day they joined GitHub until the end of September 2019, when we Collected the data. This led to a total of 77,456 PRs spanning 9,845 repositories. For each PR, we collected the
-Following information:
-(1) Creation date: the date during which the PR was submitted.
-(2) Acceptance: whether the closed PR was accepted.
-(3) Closing date: the date during which the PR was closed.
-(4) ASCII text file comments: the comments left by the reviewers that are explicitly linked to parts of the code submitted for review. Comments left by the PR author are excluded.
-(5) General comments: all the comments left within the PR discussion by all the developers aside from the PR author, excluding source code comments. These comments are generally wont to invite clarifications or to elucidate why a PR should be accepted/rejected.
-Source code comments, instead, reports explicit action items for the PR author to enhance the submitted code. We separate the source code comments and therefore the general comments, as there might be different levels of technical details in these two categories.
-(6) Author: the author of the PR.
-(7) Contributors: all the developers who are involved within the Discussion and handling of the PR.
+Developer Selection: To implement our study, we collected information about GitHub users. Who created your account in 2015? This was done to collect at least four years of collaborative history for each developer. Since the data was collected in September 2019, we can see 4 years of collaboration between users who created their GitHub account in December 2015. A four-year window is sufficient to observe the substantial PR submitted by the developers. Outcome, study. Knowledge transfer over time. Request for archiving and filtering: 818 Theme Developers have collected all the "closed" PRs that we submitted when we collected the data from the day they joined GitHub until the end of September 2019. It expanded a total of 77,456 PRs to 9,845 repositories. For each PR, we have collected the following information: (1) Date of creation: Date of submission of PR. (2) Acceptance: Whether the closed PR is accepted. (3) Closing date: The closing date of the PR. (4) ASCII text file comments: Comments left by reviewers that are clearly linked to parts of the code submitted by reviewers. Comments left by the PR author are excluded. (5) General Comments: All comments left in the PR discussion by all developers other than the PR code, except the source code comments. These comments are generally not used to invite clarity or to clarify whether PR is accepted / rejected. The source code comment, in turn, reports a clear action point for the PR author to improve the submitted code. We distinguish between source code comments and general comments, as these two categories may have different levels of technical detail. (6) Author: PR Author. (7) Contributors: All developers involved in the discussion and management of PR.
 
 Measures:
 To verify our hypothesis, we use proxies to measure the knowledge transfer experienced by developers through their past reviewed PRs and to assess the quality of developers’ contribution over time. 
